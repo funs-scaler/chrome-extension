@@ -1,0 +1,11 @@
+{
+ "manifest_version": 2,
+ "name": "demo",
+ "version": "1.0.0",
+ "description": "简单的Chrome扩展demo",
+ "icons": {
+  "16": "img/icon.png",
+  "48": "img/icon.png",
+  "128": "img/icon.png"
+ }
+}
