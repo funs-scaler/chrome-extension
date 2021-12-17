@@ -7,5 +7,22 @@
   "16": "img/icon.png",
   "48": "img/icon.png",
   "128": "img/icon.png"
- }
+ },
+ "page_action": {
+  "default_icon": "img/icon.png",
+  "default_title": "我是pageAction",
+  "default_popup": "popup.html"
+ },
+ "background": {
+  "scripts": ["js/translate.js", "js/speak.js", "js/increase.js", "js/resource.js", "js/backcolor.js", "js/pageAction.js"],
+  "persistent": false
+ },
+ "permissions": ["contextMenus", "tts", "https://*.bing.com/*", "tabs"],
+ "content_scripts": [
+  {
+   "matches": ["https://*.bing.com/*"],
+   "js": ["js/jquery-3.6.0.min.js", "js/content.js"]
+  }
+ ],
+ "web_accessible_resources": ["img/*"]
 }
